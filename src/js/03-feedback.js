@@ -40,6 +40,8 @@ function formSubmit(e) {
         message: formMessage
     }
 
+    if (feedback.email === '' || feedback.message === '') { return }
+
     console.log(feedback)
     
     form.reset()
